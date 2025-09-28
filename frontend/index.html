@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARG - AI Career Guidance</title>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'marg-bg': '#F3F9F8',
+              'marg-bg-light': '#E6F3F1',
+              'marg-primary': '#0D4740',
+              'marg-secondary': '#4AA398',
+              'marg-accent': '#F2994A',
+              'marg-text-primary': '#0D4740',
+              'marg-text-secondary': '#547872',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              tech: ['"Share Tech Mono"', 'monospace'],
+            },
+            keyframes: {
+              'fade-in': { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+              'fade-in-up': { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+              'fade-in-up-short': { '0%': { opacity: '0', transform: 'translateY(15px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+              'fade-in-right': { '0%': { opacity: '0', transform: 'translateX(-20px)' }, '100%': { opacity: '1', transform: 'translateX(0)' } },
+              'fade-in-left': { '0%': { opacity: '0', transform: 'translateX(20px)' }, '100%': { opacity: '1', transform: 'translateX(0)' } },
+              'scale-in': { '0%': { transform: 'scale(0.95)', opacity: '0' }, '100%': { transform: 'scale(1)', opacity: '1' } },
+              'bg-pan': {
+                '0%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+                '100%': { backgroundPosition: '0% 50%' },
+              }
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'fade-in-fast': 'fade-in 0.3s ease-out forwards',
+              'fade-in-up': 'fade-in-up 0.7s ease-out forwards',
+              'fade-in-up-medium': 'fade-in-up 0.5s ease-out forwards',
+              'fade-in-up-long': 'fade-in-up 0.8s ease-out forwards',
+              'fade-in-up-short': 'fade-in-up-short 0.6s ease-out forwards',
+              'fade-in-right': 'fade-in-right 0.7s ease-out forwards',
+              'fade-in-left': 'fade-in-left 0.7s ease-out forwards',
+              'scale-in': 'scale-in 0.3s ease-out forwards',
+              'bg-pan': 'bg-pan 30s linear infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style type="text/css">
+      .bg-animated-pattern {
+        background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.2) 0%, transparent 20%),
+                          radial-gradient(circle at 80% 30%, rgba(255,255,255,0.2) 0%, transparent 15%),
+                          radial-gradient(circle at 50% 80%, rgba(255,255,255,0.15) 0%, transparent 25%);
+        background-size: 200% 200%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
