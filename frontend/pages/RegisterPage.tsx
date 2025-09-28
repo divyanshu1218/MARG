@@ -88,13 +88,6 @@ const RegisterPage: React.FC = () => {
               <GoogleIcon />
               Sign in with Google
             </a>
-            <a
-              href={process.env.VITE_BACKEND_URL + '/api/auth/digilocker'}
-              className="w-full flex items-center justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-[#007BFF] hover:bg-[#0069D9] transition-colors"
-            >
-              <DigiLockerIcon />
-              Sign in with DigiLocker
-            </a>
           </div>
 
         </div>
